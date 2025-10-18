@@ -1,11 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
+
 body{
-    background: url('./mountains-7911302_1920.jpg');
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,91 +14,248 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('./mountains-7911302_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: 0;
+}
+
 .card{
     width: 90%;
     max-width: 470px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     color: #fff;
     margin: 20px;
-    border-radius: 20px;
-    padding: 40px 35px;
+    border-radius: 30px;
+    padding: 45px 40px;
     text-align: center;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5),
+                0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    z-index: 1;
+    animation: cardSlideIn 0.6s ease-out;
 }
+
+@keyframes cardSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .search{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 12px;
 }
+
 .search input{
     border: 0;
     outline: 0;
-    background: #ebfffc;
-    color: #555;
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
     padding: 10px 25px;
     height: 60px;
     border-radius: 30px;
     flex: 1;
-    margin-right: 16px;
     font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
+
+.search input:focus{
+    background: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.search input::placeholder{
+    color: #888;
+}
+
 .search button{
     border: 0;
     outline: 0;
-    background: #ebfffc;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 50%;
     width: 60px;
     height: 60px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.search button:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.search button:active{
+    transform: translateY(-1px) scale(0.98);
+}
+
 .search button img{
-    width: 16px;
+    width: 18px;
+    filter: brightness(0) invert(1);
 }
+
 .weather-icon{
     width: 170px;
     margin-top: 30px;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+    animation: float 3s ease-in-out infinite;
 }
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 .weather h1{
     font-size: 80px;
-    font-weight: 500;
+    font-weight: 600;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    letter-spacing: -2px;
 }
+
 .weather h2{
     font-size: 45px;
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 10px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
 }
+
 .details{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 20px;
     margin-top: 50px;
+    gap: 20px;
 }
+
 .col{
     display: flex;
     align-items: center;
     text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    flex: 1;
 }
+
+.col:hover{
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+}
+
 .col img{
-    width: 40px;
-    margin-right: 10px;
+    width: 45px;
+    margin-right: 15px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
-.humidity,.wind{
+
+.humidity, .wind{
     font-size: 28px;
     margin-top: -6px;
+    font-weight: 600;
 }
+
+.col p{
+    font-size: 14px;
+    opacity: 0.9;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
 .weather{
     display: none;
+    animation: fadeIn 0.5s ease-in;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
 .error{
     text-align: left;
     margin-left: 10px;
     font-size: 14px;
     margin-top: 10px;
     display: none;
+    background: rgba(255, 59, 48, 0.2);
+    padding: 12px 18px;
+    border-radius: 12px;
+    border-left: 3px solid #ff3b30;
+    backdrop-filter: blur(10px);
+    animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .card{
+        padding: 35px 25px;
+    }
+    
+    .weather h1{
+        font-size: 60px;
+    }
+    
+    .weather h2{
+        font-size: 35px;
+    }
+    
+    .details{
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .col{
+        width: 100%;
+        justify-content: center;
+    }
 }
