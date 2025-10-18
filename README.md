@@ -31,4 +31,4 @@ A sleek and responsive Weather App built with vanilla JavaScript, HTML5, and CSS
 
 ## 📁 Project Structure
 
-```/ ├── index.html # Mukhya HTML file ├── style.css # Saari styling aur animations ├── script.js # App logic aur API calls └── /images ├── clear.png ├── clouds.png ├── drizzle.png ├── humidity.png ├── mist.png ├── mountains.jpg # Background image ├── rain.png ├── search.png └── wind.png```
+``` / ├── index.html # Mukhya HTML file ├── style.css # Saari styling aur animations ├── script.js # App logic aur API calls └── /images ├── clear.png ├── clouds.png ├── drizzle.png ├── humidity.png ├── mist.png ├── mountains.jpg # Background image ├── rain.png ├── search.png └── wind.png
