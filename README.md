@@ -4,8 +4,7 @@ A sleek, responsive Weather App using vanilla JS to fetch live OpenWeatherMap da
 
 ## 🚀 Live Demo
 
-[**View Live Demo Here**](https://your-deploy-url.com)
-*(Insert your deployed link here)*
+[**https://jalvayu.netlify.app/**]
 
 ## ✨ Features
 
@@ -25,3 +24,6 @@ A sleek, responsive Weather App using vanilla JS to fetch live OpenWeatherMap da
 * OpenWeatherMap API
 
 ## 📁 Project Structure
+
+
+/ ├── index.html # Main HTML file ├── style.css # CSS file for all styling ├── script.js # Main app logic ├── config.js # (Ignored by Git) API key resides here ├── .gitignore # Tells Git to ignore config.js └── /images # Weather icons, search icon, etc. ├── clear.png ├── clouds.png ├── rain.png ├── mist.png ├── drizzle.png ├── humidity.png ├── wind.png ├── search.png └── mountains.jpg
