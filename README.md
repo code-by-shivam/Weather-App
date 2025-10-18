@@ -46,3 +46,8 @@ A sleek and responsive Weather App built with vanilla JavaScript, HTML5, and CSS
     ├── search.png 
     └── wind.png
  ```
+
+ 🚀 How to Use (Local Setup)
+ 
+    1.Clone this repository.
+    2.Open the index.html file in your web browser.
