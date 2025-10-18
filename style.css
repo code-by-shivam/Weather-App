@@ -25,7 +25,7 @@ body::before{
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('./mountains-7911302_1920.jpg');
+    background: url('./images/mountains.jpg');
     background-size: cover;
     background-position: center;
     opacity: 0.3;
