@@ -26,9 +26,23 @@ A sleek and responsive Weather App built with vanilla JavaScript, HTML5, and CSS
 
 * **HTML5**
 * **CSS3** (Glassmorphism, Flexbox, Animations, Media Queries)
-* **Vanilla JavaScript** (ES6+, `async/await`, `fetch` API)
+* **JavaScript** (ES6+, `async/await`, `fetch` API)
 * **OpenWeatherMap API**
 
 ## 📁 Project Structure
-
-``` / ├── index.html # Mukhya HTML file ├── style.css # Saari styling aur animations ├── script.js # App logic aur API calls └── /images ├── clear.png ├── clouds.png ├── drizzle.png ├── humidity.png ├── mist.png ├── mountains.jpg # Background image ├── rain.png ├── search.png └── wind.png
+```
+ / 
+ ├── index.html # Mukhya HTML file 
+ ├── style.css # Saari styling aur animations 
+ ├── script.js # App logic aur API calls 
+ └── /images 
+    ├── clear.png 
+    ├── clouds.png 
+    ├── drizzle.png 
+    ├── humidity.png
+    ├── mist.png 
+    ├── mountains.jpg # Background image 
+    ├── rain.png 
+    ├── search.png 
+    └── wind.png
+ ```
