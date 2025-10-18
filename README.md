@@ -10,8 +10,7 @@ A sleek and responsive Weather App built with vanilla JavaScript, HTML5, and CSS
 
 ## 🚀 Live Demo
 
-[**View Live Demo Here**](https://jalvayu.netlify.app)
-*(Yeh link aapke Netlify project "jalvayu" par based hai. Agar naam alag hai, toh ise badal dein.)*
+[**[View Live Demo Here](https://jalvayu.netlify.app/)**]
 
 ## ✨ Features
 
