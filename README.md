@@ -1,29 +1,34 @@
-# Weather App (TaskFlow)
+Here is the content, formatted as a single README.md file.
 
-A sleek, responsive Weather App using vanilla JS to fetch live OpenWeatherMap data. Features a modern glassmorphism design, dynamic weather icons, and smooth CSS animations.
+You can copy everything inside the box below, create a new file named README.md in your project folder, and paste this content into it.
+
+Markdown
+
+# Weather App (Jalvayu)
+
+A sleek and responsive Weather App built with vanilla JavaScript, HTML5, and CSS3. It fetches real-time data from the OpenWeatherMap API to display the current weather for any city. The interface features a modern "glassmorphism" design with smooth animations.
 
 ## 🚀 Live Demo
 
-[**https://jalvayu.netlify.app/**]
+[**View Live Demo Here**](https://jalvayu.netlify.app)
+*(Yeh link aapke Netlify project "jalvayu" par based hai. Agar naam alag hai, toh ise badal dein.)*
 
 ## ✨ Features
 
-* **Real-time Data:** Fetches live weather data (temperature, humidity, wind speed) from the OpenWeatherMap API.
-* **City Search:** Allows users to search for weather in any city.
-* **Dynamic Icons:** Weather icons automatically change based on the forecast (e.g., Clouds, Rain, Clear, Mist).
-* **Glassmorphism UI:** Modern "frosted glass" look with smooth CSS animations.
-* **Responsive Design:** Looks great on desktop, tablets, and mobile phones.
-* **Error Handling:** Displays a clear error message if the city name is invalid.
-* **Secure API Key:** API key is hidden using a `config.js` file, which is ignored by `.gitignore` for security.
+* **Real-time Data:** Fetches live temperature, humidity, and wind speed from the OpenWeatherMap API.
+* **City Search:** Allows users to search for any city. Search works on both button click and pressing the "Enter" key.
+* **Dynamic Icons:** The weather icon changes dynamically based on the forecast (e.g., Clouds, Clear, Rain, Drizzle, Mist).
+* **Glassmorphism UI:** Modern "frosted glass" look with animations like a floating icon and fade-in effects.
+* **Responsive Design:** The layout adapts perfectly for mobile screens.
+* **Error Handling:** Displays a custom error message with a "shake" animation if the city is not found (404 error).
 
 ## 🛠️ Technologies Used
 
-* HTML5
-* CSS3 (Flexbox, Animations, Glassmorphism)
-* Vanilla JavaScript (ES6+, `async/await`, `fetch` API)
-* OpenWeatherMap API
+* **HTML5**
+* **CSS3** (Glassmorphism, Flexbox, Animations, Media Queries)
+* **Vanilla JavaScript** (ES6+, `async/await`, `fetch` API)
+* **OpenWeatherMap API**
 
 ## 📁 Project Structure
 
-
-/ ├── index.html # Main HTML file ├── style.css # CSS file for all styling ├── script.js # Main app logic ├── config.js # (Ignored by Git) API key resides here ├── .gitignore # Tells Git to ignore config.js └── /images # Weather icons, search icon, etc. ├── clear.png ├── clouds.png ├── rain.png ├── mist.png ├── drizzle.png ├── humidity.png ├── wind.png ├── search.png └── mountains.jpg
+```/ ├── index.html # Mukhya HTML file ├── style.css # Saari styling aur animations ├── script.js # App logic aur API calls └── /images ├── clear.png ├── clouds.png ├── drizzle.png ├── humidity.png ├── mist.png ├── mountains.jpg # Background image ├── rain.png ├── search.png └── wind.png```
